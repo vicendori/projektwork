@@ -3,8 +3,13 @@ package hu.masterfield.browser;
         Chrome,
         ChromeSM,
         Firefox,
-//        SafariWDM,
-//        EdgeWDM,
-        FirefoxSM
+/**
+ * SafariWDM,
+ * EdgeWDM,
+ */
+        FirefoxSM;
+
+        private WebBrowserType(){
+        }
     }
 
