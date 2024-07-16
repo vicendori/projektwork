@@ -5,11 +5,13 @@ import hu.masterfield.browser.WebBrowserSettings;
 import hu.masterfield.browser.WebBrowserType;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
     public class BaseTest {
 
@@ -17,6 +19,7 @@ import java.time.Duration;
         protected String baseURL;
         protected Actions builder;
         protected WebBrowserType webBrowserType;
+
 
         @BeforeEach
         public void setup() {
