@@ -6,7 +6,7 @@ public class WebBrowserSettings {
     private static final String pathToChromeDriver = "C:\\Users\\A200119538\\DT\\WebBrowsers\\ChromeDriver\\126\\chromedriver.exe";
     private static final String pathToChrome = "C:\\Users\\A200119538\\DT\\WebBrowsers\\ChromeBin\\126\\chrome.exe";
 
-    private static final String baseURL = "https://testautomation.masterfield.hu/SeleniumPractices/index.html";
+    private static final String baseURL = "https://bevasarlas.tesco.hu/groceries/hu-HU";
 
     private static final String pathToScreenshots = "c:\\DT\\Screenshots\\";
 

@@ -28,6 +28,7 @@ public class WebBrowser {
                 chromeOptions.addArguments("--remote-allow-origins=*");
 //                chromeOptions.addArguments("--incognito");
 //                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--disable-blink-features=AutomationControlled");
                 driver = new ChromeDriver(chromeOptions);
                 break;
             case ChromeSM:

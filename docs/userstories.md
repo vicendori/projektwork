@@ -5,7 +5,7 @@ USER STORIES:
 
 User Story 1: Change the language of the page
 
-As a user I want to change the langugage between Hungarian and English.
+As a user I want to change the language between Hungarian and English.
 
 User Story 2: Account registration
 
@@ -19,6 +19,6 @@ User Story 4: Product search
 
 As a user I want to search for specific products to see all the related search results.
 
-User Story 5: Cheking out promotions
+User Story 5: Checking out promotions
 
 As a user I want to be able to see the actual promotions on the page. 
