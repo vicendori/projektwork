@@ -5,7 +5,6 @@ Feature: Using the search function in order to find a product.
     Background:
       Given I open the homepage
       And I accept the cookies
-      Then Click into the search field.
 
     Scenario Outline: Search for an existing product
 

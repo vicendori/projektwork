@@ -3,11 +3,15 @@ package hu.masterfield.tests;
 import hu.masterfield.browser.WebBrowser;
 import hu.masterfield.browser.WebBrowserSettings;
 import hu.masterfield.browser.WebBrowserType;
+import hu.masterfield.pageobjects.HomePage;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.TestInstance;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import java.time.Duration;
 
@@ -19,9 +23,11 @@ import java.time.Duration;
         protected String baseURL;
         protected Actions builder;
         protected WebBrowserType webBrowserType;
+        protected HomePage homePage;
+        protected WebDriverWait wait;
 
 
-        @BeforeEach
+    @BeforeEach
         public void setup() {
             webBrowserType = WebBrowserType.Chrome;
             driver = WebBrowser.createDriver(webBrowserType);
@@ -30,6 +36,8 @@ import java.time.Duration;
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             baseURL = WebBrowserSettings.getBaseURL();
             builder = new Actions(driver);
+            wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            baseURL = WebBrowserSettings.getBaseURL();
         }
 
         @AfterEach
