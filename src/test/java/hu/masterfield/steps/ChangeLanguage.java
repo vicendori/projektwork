@@ -1,3 +1,5 @@
+package hu.masterfield.steps;
+
 import hu.masterfield.pageobjects.HomePage;
 import hu.masterfield.tests.BaseTest;
 import io.cucumber.java.en.And;
