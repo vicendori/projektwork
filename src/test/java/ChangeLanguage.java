@@ -1,11 +1,18 @@
+import hu.masterfield.pageobjects.HomePage;
+import hu.masterfield.tests.BaseTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class ChangeLanguage {
+
+
+public class ChangeLanguage extends BaseTest {
     @Given("that the homepage is open")
     public void thatTheHomepageIsOpen() {
+        driver.get(baseURL);
+        homePage = new HomePage(driver);
+        homePage.isLoaded();
         
     }
 
