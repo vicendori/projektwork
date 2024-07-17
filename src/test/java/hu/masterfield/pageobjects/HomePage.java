@@ -11,8 +11,8 @@ import org.openqa.selenium.support.PageFactory;
 
         @FindBy(xpath = "//button[@class='styled__StyledTextButton-sc-8hxn3m-0 jyQVJq ddsweb-cookies-notification__button ddsweb-button ddsweb-button--text-button']")
         WebElement cookieNotificationElement;
-//        @FindBy(xpath = "//input[@id='search-input']")
-//        WebElement searchInputElement;
+        @FindBy(xpath = "//button[@id='utility-header-language-switch-link']")
+        WebElement selectEnglishElement;
 
 
 
